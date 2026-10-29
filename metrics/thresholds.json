@@ -1,0 +1,10 @@
+{
+  "_sources": "YouTube: ppc.land 2026-08 report on YPP changes + blog.youtube qualified views/hours; TikTok: postfa.st 2026-07; Instagram: fluxnote.io 2026. Verify on official pages when an alert fires.",
+  "ypp_2026": {"label": "until Jan 31, 2027", "subscribers": 1000, "watch_hours": 4000, "shorts_views": 10000000},
+  "ypp_2027": {"label": "from Feb 1, 2027", "subscribers": 1000, "watch_hours": 8000, "shorts_views": 20000000},
+  "ypp_fan_funding": {"subscribers": 500, "watch_hours": 3000, "shorts_views": 3000000},
+  "tiktok_creator_rewards": {"followers": 10000, "views_30d": 100000, "min_video_seconds": 60},
+  "tiktok_live_gifts": {"followers": 1000},
+  "instagram_gifts": {"followers": 500},
+  "instagram_subscriptions": {"followers": 10000}
+}

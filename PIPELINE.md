@@ -19,7 +19,7 @@ no human in the loop, so quality and accuracy checks are part of the job, not op
 ## Schedule (America/Chicago)
 | Day | What this run makes | Posts |
 |---|---|---|
-| Sun–Fri | One standalone Short (55–65 s) | Same day 6:00 PM: TikTok, Instagram Reel, YouTube Short |
+| Sun–Fri | One standalone Short (62–80 s) | Same day 6:00 PM: TikTok, Instagram Reel, YouTube Short |
 | Saturday | The weekly long video (about 3 min) **and** its vertical cut | Short: Sat 6:00 PM (teaser, end card "Full story tomorrow on YouTube"). Long: **Sun 9:00 AM** on YouTube |
 
 - Convert to UTC with `zoneinfo` (daylight saving changes). Never hard-code the offset.
@@ -57,6 +57,23 @@ fc-list | grep -qi poppins || echo "Poppins font missing: install fonts-poppins 
 Read `episodes.md` (what's been made), `topics.md` (backlog), `insights.md` (what's working).
 Look at `episodes/ep01-bethune-cookman/scenes.py`. It's the worked example for scene code.
 
+### 0b. Track metrics and monetization (every run, before production)
+Owner asked to be alerted the moment any account becomes eligible to monetize.
+1. `get_social_account_analytics` for each account (TikTok gives `followers`; YouTube gives subscribers when connected;
+   Instagram followers if offered) and `analyze_social_content_performance` per account (`days: 30`, `limit: 25`, sort by views;
+   for YouTube also `watch_time`) to get each video's **lifetime** views and watch time.
+2. Write `/tmp/snapshot.json` in the format documented in `pipeline/metrics.py` (one entry per video: platform, id,
+   kind short/long for YouTube, published date, lifetime views, `watch_hours` for YouTube long videos,
+   `duration_s` for TikTok), keeping videos from older snapshots that dropped out of the 30-day list
+   (carry their last known numbers forward).
+3. `python3 pipeline/metrics.py /tmp/snapshot.json` → updates `metrics/snapshots.jsonl` and `metrics/MONETIZATION.md`.
+4. Any `ALERT:` line = a threshold newly met. Put it at the **top** of the summary message in bold, with what it unlocks
+   and how to apply (YouTube Studio → Earn; TikTok → Creator tools → Creator Rewards; Instagram → Professional dashboard →
+   Monetization). Before alerting, confirm the current requirement on the platform's official help page.
+5. If an analytics call fails (e.g. YouTube "no channel statistics"), note it in the summary: the owner may need to
+   reconnect that account in FavStash. Use what's available; never guess numbers.
+6. On Sundays, include a one-line progress line per program from `MONETIZATION.md` in the summary.
+
 ### 1. Pick the topic
 - Take the next unused topic in `topics.md`, unless `insights.md` says a category is outperforming. Then pick from that category.
 - Vary categories day to day. Never repeat a covered topic (check `episodes.md`).
@@ -72,7 +89,7 @@ Look at `episodes/ep01-bethune-cookman/scenes.py`. It's the worked example for s
 - Write sources into `meta.md` in the episode folder.
 
 ### 3. Write the script → `narration.txt`
-- **Short:** 130–170 words, 4–6 paragraphs. **Long:** 420–520 words, 8–10 paragraphs.
+- **Short:** 165–200 words, 5–7 paragraphs (narration ≥ 62 s; TikTok only pays on videos longer than 1 minute). **Long:** 420–520 words, 8–10 paragraphs.
 - Blank line between paragraphs. **Each paragraph becomes one scene.**
 - The first sentence is the hook: a surprising fact, a stake or a question. No "In this video".
 - End with a question CTA that invites comments (e.g. "Which HBCU should we cover next?").
@@ -132,7 +149,7 @@ Add new props to the episode's `scenes.py` (or to `lib.py` if they're reusable).
 ### 9. QA before anything is uploaded
 - Sample frames from the final MP4s (ffmpeg `-ss`) and look at them: sync, overlaps, empty scenes, typos.
 - Captions match the audio. HBCU shows as "HBCU" in captions.
-- Durations: Short ≤ 90 s (aim 55–70 s). Long 2.5–4 min.
+- Durations: Short 62–90 s (must be over 60 s for TikTok Creator Rewards). Long 2.5–4 min (long videos are the only source of YouTube watch hours).
 - If anything is wrong, fix and re-render. If it can't be fixed, **don't post**; explain in the summary.
 
 ### 10. Upload media
