@@ -28,14 +28,23 @@ no human in the loop, so quality and accuracy checks are part of the job, not op
 - Run order matters: make sure the 6 PM post is scheduled well before 6 PM. If the run starts after 5:30 PM,
   schedule for the next free 6 PM slot instead and say so in the summary.
 
-## Post budget (FavStash plan limit)
-Each platform post counts as one post. The plan allows `maxPostsPerMonth` (50 on the current plan).
-Before scheduling, call `get_account_plan_and_usage`, then:
-1. Reserve 1 post for each remaining Sunday long video this month.
-2. `per_day = floor((maxPostsPerMonth - postsThisMonth - reserved) / days_left_in_month_including_today)`.
-3. Post the Short to the first `per_day` platforms in this priority order: **TikTok, YouTube, Instagram**.
-4. If budget forced skipping a platform, say so in the summary and recommend the upgrade
-   (favstash.app/dashboard/billing, Creator Pro).
+## Limits: pause and pick up after the reset (owner's instruction, 2026-10-29)
+When a tool limit is reached, don't ration or give up. Finish what can be finished, park the rest,
+and pick it up automatically on the first run after the limit resets.
+
+- **FavStash posts** (`maxPostsPerMonth`, check `get_account_plan_and_usage` before scheduling; each platform post
+  counts as 1). Platform daily caps (e.g. Instagram's `quota` in `get_social_publishing_options`) work the same way.
+  Schedule posts in this order until the limit is reached: Sunday long video first, then the Short on
+  **TikTok, YouTube, Instagram**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
+  (episode, platform, media URLs, caption/title/tags ready to paste into `create_social_post`).
+- **ElevenLabs credits** (or any generation limit): if voice or transcription fails for quota, stop production for the day.
+  Leave the topic unchecked in `topics.md`, note the pause in `episodes.md`, and continue on the next run.
+- **Start of every run:** check `get_account_plan_and_usage` and the Pending posts table. If there's room again
+  (e.g. a new month), schedule pending posts first, oldest first, each into the next free 6:00 PM slot for that platform
+  (the long video into the next free Sunday 9:00 AM). Never put two Shorts in the same slot on one platform. Remove each from
+  the table once it's `QUEUE`. Then do today's normal job.
+- Mention any paused or pending items in the summary message, with the date the limit resets
+  (`analyticsResetAt` / start of next month for FavStash).
 
 ## Steps
 
