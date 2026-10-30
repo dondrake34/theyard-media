@@ -18,7 +18,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 ## Civil rights and history-making alumni
 - [ ] **L** The Greensboro Four: NC A&T students at the Woolworth's counter (1960)
 - [ ] Thurgood Marshall: Lincoln and Howard Law
-- [ ] Martin Luther King Jr. at Morehouse at 15
+- [x] Martin Luther King Jr. at Morehouse at 15 — ep02
 - [ ] Toni Morrison at Howard
 - [ ] Oprah Winfrey at Tennessee State
 - [ ] Katherine Johnson at West Virginia State (NASA "Hidden Figures")
@@ -48,6 +48,9 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] HBCU women who changed science
 - [ ] Famous HBCU commencement speakers
 - [ ] HBCUs founded by formerly enslaved people
+
+- [ ] Benjamin Mays: the Morehouse president who mentored a generation (sources: King Institute, Morehouse, Bates)
+- [ ] Morehouse's Maroon Tiger and King's essay "The Purpose of Education" (verify year)
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
