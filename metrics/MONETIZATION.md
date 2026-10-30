@@ -1,6 +1,6 @@
 # Monetization progress
 
-Updated 2026-10-29 by the daily run. Source: FavStash analytics snapshots (`metrics/snapshots.jsonl`). Rolling windows marked * have less history than the window so far.
+Updated 2026-10-30 by the daily run. Source: FavStash analytics snapshots (`metrics/snapshots.jsonl`). Rolling windows marked * have less history than the window so far.
 
 ## YouTube fan funding (memberships, Super Chat, Shopping) — 500 subs + 3,000 watch hrs/365d OR 3,000,000 Shorts views/90d
 
@@ -22,14 +22,14 @@ Updated 2026-10-29 by the daily run. Source: FavStash analytics snapshots (`metr
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | 1 | 10,000 | 0.0% |
-| views on >1-min videos (30d) * | 0 | 100,000 | 0.0% |
+| followers | 2 | 10,000 | 0.0% |
+| views on >1-min videos (30d) * | 236 | 100,000 | 0.2% |
 
 ## TikTok LIVE gifts — 1,000 followers
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | 1 | 1,000 | 0.1% |
+| followers | 2 | 1,000 | 0.2% |
 
 ## Instagram Gifts — 500 followers
 
