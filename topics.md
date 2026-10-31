@@ -40,7 +40,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] Why HBCU alumni say "HBCU made"
 
 ## Mysteries, firsts and surprising facts
-- [ ] Why HBCUs exist: the laws that made them necessary (Morrill Act of 1890)
+- [x] Why HBCUs exist: the laws that made them necessary (Morrill Act of 1890) — ep03
 - [ ] The HBCU that started in a railroad car / unusual first campuses (verify)
 - [ ] HBCUs produce a large share of Black doctors and engineers (find current stats)
 - [ ] George Washington Carver's lab at Tuskegee
@@ -48,6 +48,9 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] HBCU women who changed science
 - [ ] Famous HBCU commencement speakers
 - [ ] HBCUs founded by formerly enslaved people
+- [ ] Alcorn State: the first Black land-grant college (1871), two decades before the 1890 Act (verify)
+- [ ] Central State (Ohio): the newest 1890 land-grant (designated 2014; verify)
+- [ ] **L** The 1890 universities and extension: Black county agents who brought farming science to rural families (e.g. Tuskegee's Movable School; verify)
 
 - [ ] Benjamin Mays: the Morehouse president who mentored a generation (sources: King Institute, Morehouse, Bates)
 - [ ] Morehouse's Maroon Tiger and King's essay "The Purpose of Education" (verify year)
