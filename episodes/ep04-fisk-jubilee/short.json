@@ -1,0 +1,13 @@
+{
+  "header": ["THEY SANG TO SAVE", "THEIR HBCU"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which HBCU choir is next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["eighteen seventy-one", "1871"],
+    ["eighteen seventy-two", "1872"],
+    ["October sixth,", "October 6,"],
+    ["sixth,", "6,"]
+  ],
+  "cover": "cover_short.png"
+}
