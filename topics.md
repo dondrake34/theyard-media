@@ -10,7 +10,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] **L** Howard University: founded right after the Civil War
 - [ ] Spelman's first classes in a church basement
 - [ ] Morehouse's beginnings in Augusta
-- [ ] Fisk University's Jubilee Singers: singing to save their school
+- [x] Fisk University's Jubilee Singers: singing to save their school — ep04
 - [ ] **L** Hampton Institute and the Emancipation Oak
 - [ ] Lincoln University (PA): the first degree-granting HBCU
 - [ ] Wilberforce University and the AME Church
@@ -54,6 +54,15 @@ Every fact still gets two sources at production time. These are leads, not verif
 
 - [ ] Benjamin Mays: the Morehouse president who mentored a generation (sources: King Institute, Morehouse, Bates)
 - [ ] Morehouse's Maroon Tiger and King's essay "The Purpose of Education" (verify year)
+
+- [ ] Ella Sheppard: Jubilee Singers pianist, born into slavery (verify; Fisk, Tennessee Encyclopedia)
+- [ ] Jubilee Hall: "the South's first permanent structure built for the education of Black students" (Fisk) — wording varies, verify
+- [ ] Fisk Jubilee Singers' 2021 Grammy (Best Roots Gospel Album; verify) — modern follow-up to ep04
+
+## Next week's order (set 2026-11-01 weekly review)
+Mon: culture (e.g. "The Yard": what it means) · Tue: civil rights (Greensboro Four short version, or Ella Baker/SNCC) ·
+Wed: firsts (Alcorn State, first Black land-grant) · Thu: alumni (Katherine Johnson) · Fri: culture (marching bands) ·
+Sat long: Cheyney University (first HBCU) — real founder arc.
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
