@@ -5,8 +5,8 @@ SNAPSHOT.json (written by the run from FavStash analytics, numbers are LIFETIME 
 {
   "date": "2026-10-30",
   "accounts": {
-    "youtube":   {"subscribers": 12},
     "tiktok":    {"followers": 40},
+    "x":         {"followers": 3},
     "instagram": {"followers": null}
   },
   "videos": [
@@ -74,23 +74,15 @@ def check(key, label, items):
         met.append((key, label))
 
 
-yt_active = 'ypp_2027' if today >= dt.date(2027, 2, 1) else 'ypp_2026'
-y = TH[yt_active]; f = TH['ypp_fan_funding']
-subs = acct('youtube', 'subscribers')
-wh, wh_ex = window('youtube', 'watch_hours', 365, kind='long')
-sv, sv_ex = window('youtube', 'views', 90, kind='short')
-rows.append((f"YouTube fan funding (memberships, Super Chat, Shopping) — {f['subscribers']} subs + "
-             f"{f['watch_hours']:,} watch hrs/365d OR {f['shorts_views']:,} Shorts views/90d",
-             [('subscribers', subs, f['subscribers'], True), ('watch hours (365d)', wh, f['watch_hours'], wh_ex),
-              ('Shorts views (90d)', sv, f['shorts_views'], sv_ex)], None))
-fan_ok = subs is not None and subs >= f['subscribers'] and (wh >= f['watch_hours'] or sv >= f['shorts_views'])
-if fan_ok:
-    met.append(('yt_fan', 'YouTube fan funding'))
-rows.append((f"YouTube ad revenue (YPP, {y['label']}) — {y['subscribers']:,} subs + {y['watch_hours']:,} watch hrs/365d OR {y['shorts_views']:,} Shorts views/90d",
-             [('subscribers', subs, y['subscribers'], True), ('watch hours (365d)', wh, y['watch_hours'], wh_ex),
-              ('Shorts views (90d)', sv, y['shorts_views'], sv_ex)], None))
-if subs is not None and subs >= y['subscribers'] and (wh >= y['watch_hours'] or sv >= y['shorts_views']):
-    met.append(('yt_ypp_' + yt_active, 'YouTube ad revenue (YPP)'))
+# YouTube was replaced by X on 2026-11-02 (owner's decision); YouTube rows dropped.
+xr = TH['x_revenue_sharing']; xf = acct('x', 'followers')
+# Impressions and *verified* followers are not exposed by the connector, so they stay unknown and this never
+# auto-alerts; total followers is shown as a lower-bound signal (verified followers <= total followers).
+check('x_rev_share', f"X Creator Revenue Sharing — Premium + {xr['verified_followers']:,} verified followers + "
+      f"{xr['impressions_90d']:,} organic impressions/3 months (check X → Monetization settings)",
+      [('followers (all, not just verified)', xf, xr['verified_followers'], True),
+       ('verified followers', acct('x', 'verified_followers'), xr['verified_followers'], True),
+       ('organic impressions (3 months)', acct('x', 'impressions_90d'), xr['impressions_90d'], True)])
 
 t = TH['tiktok_creator_rewards']; tf = acct('tiktok', 'followers')
 tv, tv_ex = window('tiktok', 'views', 30, min_dur=60)
@@ -125,7 +117,7 @@ for label, items, _ in rows:
 lines.append("## Alerts sent\n")
 lines += [f"- {k}: {d}" for k, d in sent.items()] or ["- none yet"]
 lines.append("\nThresholds: `metrics/thresholds.json` (check the platforms' official pages if they change). "
-             "Note: from Feb 1, 2027 YouTube's ad-revenue bar doubles to 8,000 watch hours or 20M Shorts views.")
+             "X figures marked unknown are not available through FavStash; check them in X's monetization settings.")
 open(os.path.join(ROOT, 'MONETIZATION.md'), 'w').write("\n".join(lines) + "\n")
 for k, l in new:
     print(f"ALERT: eligible for {l}")

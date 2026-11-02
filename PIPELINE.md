@@ -4,12 +4,12 @@ Every scheduled run follows this file from top to bottom. It produces and schedu
 no human in the loop, so quality and accuracy checks are part of the job, not optional.
 
 ## Standing setup and authorizations (from the owner, Don, on 2026-10-29)
-- Channel: **The Yard**, animated HBCU history and culture. TikTok/Instagram @theyardanimated, YouTube "Dondrake".
+- Channel: **The Yard**, animated HBCU history and culture. TikTok, Instagram and X: @theyardanimated.
+  **YouTube was dropped on 2026-11-02** (owner replaced it with X after every YouTube upload failed). Don't post to YouTube.
 - Fully automatic posting is approved. No per-post approval needed.
-- Don accepted TikTok's Direct Post terms and YouTube's upload certification for all The Yard uploads.
-  Use `acceptTerms: true` (TikTok) and `uploadCertified: true` (YouTube) on every post.
-- Every post carries the AI label: TikTok `aiGenerated: true`, Instagram `isAiGenerated: true`,
-  YouTube `containsSyntheticMedia: true`. YouTube `madeForKids: false`. Visibility public.
+- Don accepted TikTok's Direct Post terms for all The Yard uploads. Use `acceptTerms: true` (TikTok) on every post.
+- Every post carries the AI label where the platform offers one: TikTok `aiGenerated: true`, Instagram `isAiGenerated: true`.
+  X has no AI-label setting in the connector. Visibility public.
 - Host character: **Bo** (`pipeline/bo.py`, reference `pipeline/bo_reference.png`).
 - Voice: ElevenLabs **Terrance – Cinematic Authentic Narrator**, voice_id `IS2y6AW9sjF8fFltBSqN`, model `eleven_v4`.
 - Posting: FavStash connector. Always call `list_connected_social_accounts` first. IDs change when an account is reconnected.
@@ -19,12 +19,13 @@ no human in the loop, so quality and accuracy checks are part of the job, not op
 ## Schedule (America/Chicago)
 | Day | What this run makes | Posts |
 |---|---|---|
-| Sun–Fri | One standalone Short (62–80 s) | Same day 6:00 PM: TikTok, Instagram Reel, YouTube Short |
-| Saturday | The weekly long video (about 3 min) **and** its vertical cut | Short: Sat 6:00 PM (teaser, end card "Full story tomorrow on YouTube"). Long: **Sun 9:00 AM** on YouTube |
+| Every day (Sun–Sat) | One standalone Short (62–80 s) | Same day 6:00 PM: TikTok, Instagram Reel, X |
+
+The Saturday long video was discontinued on 2026-11-02 with YouTube (owner's choice). Saturdays make a normal Short;
+prefer a topic with a story arc. The long-video steps below (render_long.py, YouTube titles/chapters) are kept for reference only.
 
 - Convert to UTC with `zoneinfo` (daylight saving changes). Never hard-code the offset.
 - Before making anything, call `list_social_posts` and check that slot isn't already filled. Never double-post.
-  If Sunday 9 AM already has a long video queued, Saturday makes a standalone Short instead.
 - Run order matters: make sure the 6 PM post is scheduled well before 6 PM. If the run starts after 5:30 PM,
   schedule for the next free 6 PM slot instead and say so in the summary.
 
@@ -34,14 +35,14 @@ and pick it up automatically on the first run after the limit resets.
 
 - **FavStash posts** (`maxPostsPerMonth`, check `get_account_plan_and_usage` before scheduling; each platform post
   counts as 1). Platform daily caps (e.g. Instagram's `quota` in `get_social_publishing_options`) work the same way.
-  Schedule posts in this order until the limit is reached: Sunday long video first, then the Short on
-  **TikTok, YouTube, Instagram**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
+  X also has its own monthly allowance (`maxXPostUnitsPerMonth`; a video post costs 1 unit, a post containing a URL costs 10,
+  so never put links in X captions). Schedule the Short in this order until a limit is reached: **TikTok, Instagram, X**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
   (episode, platform, media URLs, caption/title/tags ready to paste into `create_social_post`).
 - **ElevenLabs credits** (or any generation limit): if voice or transcription fails for quota, stop production for the day.
   Leave the topic unchecked in `topics.md`, note the pause in `episodes.md`, and continue on the next run.
 - **Start of every run:** check `get_account_plan_and_usage` and the Pending posts table. If there's room again
   (e.g. a new month), schedule pending posts first, oldest first, each into the next free 6:00 PM slot for that platform
-  (the long video into the next free Sunday 9:00 AM). Never put two Shorts in the same slot on one platform. Remove each from
+  Never put two Shorts in the same slot on one platform. Remove each from
   the table once it's `QUEUE`. Then do today's normal job.
 - Mention any paused or pending items in the summary message, with the date the limit resets
   (`analyticsResetAt` / start of next month for FavStash).
@@ -59,25 +60,25 @@ Look at `episodes/ep01-bethune-cookman/scenes.py`. It's the worked example for s
 
 ### 0b. Track metrics and monetization (every run, before production)
 Owner asked to be alerted the moment any account becomes eligible to monetize.
-1. `get_social_account_analytics` for each account (TikTok gives `followers`; YouTube gives subscribers when connected;
-   Instagram followers if offered) and `analyze_social_content_performance` per account (`days: 30`, `limit: 25`, sort by views;
-   for YouTube also `watch_time`) to get each video's **lifetime** views and watch time.
+1. `get_social_account_analytics` for each account (TikTok gives `followers`; X followers if offered; Instagram followers
+   if offered) and `analyze_social_content_performance` per account (`days: 30`, `limit: 25`, sort by views) to get each
+   video's **lifetime** views.
 2. Write `/tmp/snapshot.json` in the format documented in `pipeline/metrics.py` (one entry per video: platform, id,
-   kind short/long for YouTube, published date, lifetime views, `watch_hours` for YouTube long videos,
-   `duration_s` for TikTok), keeping videos from older snapshots that dropped out of the 30-day list
+   published date, lifetime views, `duration_s` for TikTok; accounts `x: {followers}`), keeping videos from older snapshots that dropped out of the 30-day list
    (carry their last known numbers forward).
 3. `python3 pipeline/metrics.py /tmp/snapshot.json` → updates `metrics/snapshots.jsonl` and `metrics/MONETIZATION.md`.
 4. Any `ALERT:` line = a threshold newly met. Put it at the **top** of the summary message in bold, with what it unlocks
-   and how to apply (YouTube Studio → Earn; TikTok → Creator tools → Creator Rewards; Instagram → Professional dashboard →
-   Monetization). Before alerting, confirm the current requirement on the platform's official help page.
-5. If an analytics call fails (e.g. YouTube "no channel statistics"), note it in the summary: the owner may need to
+   and how to apply (TikTok → Creator tools → Creator Rewards; Instagram → Professional dashboard → Monetization;
+   X → Settings → Monetization). X Creator Revenue Sharing needs Premium + 500 *verified* followers + 5M organic impressions
+   in 3 months (help.x.com, checked 2026-11-02); the connector can't see impressions or verified followers, so it never auto-alerts. Before alerting, confirm the current requirement on the platform's official help page.
+5. If an analytics call fails, note it in the summary: the owner may need to
    reconnect that account in FavStash. Use what's available; never guess numbers.
 6. On Sundays, include a one-line progress line per program from `MONETIZATION.md` in the summary.
 
 ### 1. Pick the topic
 - Take the next unused topic in `topics.md`, unless `insights.md` says a category is outperforming. Then pick from that category.
 - Vary categories day to day. Never repeat a covered topic (check `episodes.md`).
-- Saturday long videos: pick a topic with a real story arc (founder story, turning point, legacy).
+- Saturdays: pick a topic with a real story arc (founder story, turning point, legacy).
 - Episode folder: `episodes/epNN-short-slug/` (next number in `episodes.md`).
 
 ### 2. Research and fact-check (non-negotiable)
@@ -142,18 +143,19 @@ Add new props to the episode's `scenes.py` (or to `lib.py` if they're reusable).
 - Encoding is already set (H.264 veryfast CRF 20, AAC 192k, -14 LUFS).
 
 ### 8. Thumbnails (research-backed, see thumbs.py docstring)
-- 3 YouTube variants. The first is the main one; it must **tease, not repeat, the title** (3–5 words).
+- `thumbs.py` is still required: it makes `cover_short.png/jpg` (Instagram cover, TikTok cover frame). The 3 16:9 variants
+  were for YouTube and are no longer posted; keep `thumbs.json` variants short anyway. The cover must tease, not repeat, the caption.
 - One hero object (coin by default; define `thumb_hero` in `scenes.py` for a custom object).
 - Look at `thumb_sheet.png`, including the 168×94 phone-size preview. Text must read at that size.
 
 ### 9. QA before anything is uploaded
 - Sample frames from the final MP4s (ffmpeg `-ss`) and look at them: sync, overlaps, empty scenes, typos.
 - Captions match the audio. HBCU shows as "HBCU" in captions.
-- Durations: Short 62–90 s (must be over 60 s for TikTok Creator Rewards). Long 2.5–4 min (long videos are the only source of YouTube watch hours).
+- Durations: Short 62–90 s (must be over 60 s for TikTok Creator Rewards; X accepts up to 2:20 without Premium).
 - If anything is wrong, fix and re-render. If it can't be fixed, **don't post**; explain in the summary.
 
 ### 10. Upload media
-Copy `short.mp4`, `long.mp4` (Saturday), `thumb_A.jpg` (+B, C), `cover_short.jpg` into `media/epNN-slug/`,
+Copy `short.mp4` and `cover_short.jpg` into `media/epNN-slug/`,
 then commit and push (see Logging), then `import_post_media` on each raw URL to get FavStash CDN URLs.
 
 ### 11. Captions, titles, hashtags and tags (research-backed playbook)
@@ -166,7 +168,10 @@ accurate tags. YouTube tags play a minor role but still help as context. Use 7�
 - **TikTok (3–5):** `#HBCU` + `#HBCUHistory` (or `#HBCULife` for culture) + 1 school/person tag
   (e.g. `#BethuneCookman`, `#FAMU`, `#HowardUniversity`) + `#BlackHistory` + 1 format tag (`#HistoryTok` or `#LearnOnTikTok`).
 - **Instagram (exactly 5 max):** `#HBCU` `#HBCUHistory` (or `#HBCUPride`/`#HBCULife`) + school/person tag + `#BlackHistory` + 1 topic tag.
-- **YouTube Short:** title ≤ 70 chars with the main keyword first, ending in `#Shorts`; description: 1–2 keyword
+- **X:** caption **≤ 280 characters including hashtags** (FavStash enforces it; an emoji counts as 2). Keyword first line,
+  then the CTA question, then 2–3 hashtags: `#HBCU #BlackHistory` + school/person tag. No links (10× cost). Add `altText`
+  describing the video on the media item.
+- *(Retired with YouTube, kept for reference)* **YouTube Short:** title ≤ 70 chars with the main keyword first, ending in `#Shorts`; description: 1–2 keyword
   sentences + 3 hashtags (`#HBCU #BlackHistory #Shorts`); tags 8–12.
 - **YouTube long:** title ≤ 60 chars, curiosity + keyword ("She Built a College With $1.50 and 5 Girls"); description
   first line keyword-rich, then story summary, chapters (start 0:00, each ≥ 10 s, from `timing.json` paragraph
@@ -182,7 +187,10 @@ One call per publish time. Use a new `clientRequestId` such as `theyard-epNN-sho
   allowDuets: true, allowStitches: true, aiGenerated: true, commercialContent: false, acceptTerms: true}`,
   media `{url, kind: "video", durationSeconds, thumbnailTimestampMs: <cover frame ms printed by make_short>}`.
 - Instagram target: `settings: {contentType: "reel", shareToFeed: true, isAiGenerated: true}`, media with `thumbnailUrl` = cover.
-- YouTube target: `settings: {title, visibility: "public", madeForKids: false, uploadCertified: true,
+- X target: no `settings` needed; media `{url, kind: "video", durationSeconds, altText}`. If X fails with
+  `HTTP 402 credits depleted`, the X API pay-per-use balance behind the connection is empty: don't retry, leave X for that
+  day, and tell the owner to top up / contact FavStash.
+- *(Retired)* YouTube target: `settings: {title, visibility: "public", madeForKids: false, uploadCertified: true,
   containsSyntheticMedia: true, notifySubscribers: true, tags: [...]}` (no `contentType` key; YouTube detects Shorts),
   media with `thumbnailUrl` (main thumbnail for long, cover for Short).
 - Verify with `get_social_post` that each post is `QUEUE` with the right time.
@@ -196,7 +204,7 @@ One call per publish time. Use a new `clientRequestId` such as `theyard-epNN-sho
   End commit messages with the attribution lines from the session's system reminder.
 
 ### 14. Sunday extra: weekly review
-On Sunday's run, also call `analyze_social_content_performance` across all three accounts for the last 7–30 days.
+On Sunday's run, also call `analyze_social_content_performance` across all three accounts (TikTok, Instagram, X) for the last 7–30 days.
 Write what worked (topics, hooks, lengths, platforms) into `insights.md` with numbers, and adjust the next week's
 topic order in `topics.md`. Comments can't be replied to through the connector, so note frequent comment
 requests/questions as topic ideas.
