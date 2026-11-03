@@ -1,6 +1,6 @@
 # Ep. 5 — "The Yard": what it means, told through Howard University's Yard
 
-Standalone Short planned for 2026-11-02 6:00 PM CT (2026-11-03 00:00 UTC). **Paused before render**: see episodes.md.
+Standalone Short planned for 2026-11-02 6:00 PM CT; still paused on 2026-11-03 (download host blocked). Will post at the next 6 PM CT slot once vo.mp3 can be downloaded.
 Voice generated (ElevenLabs Terrance, eleven_v4, 72.1 s; flow `eHZkUOfTsckvlctWuGJJ`, speech node `9IY7Ge8I9piWgadHkk5e`,
 generation `u8Yu1ZX7jNAvZPx72QYy`; transcript node `IDcW43b762GIJfqxxnuo`, generation `Ruuz7VsEM6l5ZdjVhJWd`).
 Transcript matched the script word for word (206/206); the one HBCU reads as separate H. B. C. U. words.
