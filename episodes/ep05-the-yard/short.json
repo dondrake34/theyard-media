@@ -1,0 +1,13 @@
+{
+  "header": ["WHY THE CHANNEL", "IS THE YARD"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Your campus heart?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["nineteen thirty-nine", "1939"],
+    ["two thousand one,", "2001,"],
+    ["nineteen twenty-four,", "1924,"],
+    ["D. C.,", "D.C.,"]
+  ],
+  "cover": "cover_short.png"
+}

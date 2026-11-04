@@ -30,7 +30,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 ## Culture and traditions
 - [ ] **L** Why HBCU homecoming is the biggest party in America
 - [ ] HBCU marching bands: the battle of the bands is a sport
-- [ ] "The Yard": what it means and why it matters
+- [x] "The Yard": what it means and why it matters — ep05
 - [ ] The Divine Nine: what Black Greek-letter organizations stand for
 - [ ] Step shows: history of stepping
 - [ ] The Bayou Classic (Grambling vs Southern)
