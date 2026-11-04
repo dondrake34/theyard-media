@@ -19,12 +19,11 @@ no human in the loop, so quality and accuracy checks are part of the job, not op
 ## Schedule (America/Chicago)
 | Day | What this run makes | Posts |
 |---|---|---|
-| Every day (Sun–Sat) | One standalone Short (62–80 s) | Same day 6:00 PM: TikTok and Instagram Reel every day; **X every other day** |
+| Every day (Sun–Sat) | One standalone Short (62–80 s) | Same day 6:00 PM on **TikTok, Instagram Reel and X, every day** |
 
-**X cadence (owner, 2026-11-02): every other day.** X days are the dates an even number of days after 2026-11-02
-(Nov 2, 4, 6, ...; check with `(date - date(2026,11,2)).days % 2 == 0`), so the alternation carries across month ends.
-On an X day, the day's Short also goes to X at 6:00 PM, unless X already has a post that day (e.g. a manual backfill),
-in which case skip X that day. On other days, don't post to X. That's about 15 X posts a month.
+**Cadence (owner, 2026-11-04): every platform posts every day.** The day's Short goes to TikTok, Instagram and X at
+6:00 PM. If a platform already has a post in that day's slot (e.g. a manual backfill), skip that platform that day.
+(Replaces the 2026-11-02 every-other-day X rule.) That's about 30 X posts a month (1 X unit each).
 
 The Saturday long video was discontinued on 2026-11-02 with YouTube (owner's choice). Saturdays make a normal Short;
 prefer a topic with a story arc. The long-video steps below (render_long.py, YouTube titles/chapters) are kept for reference only.
@@ -41,7 +40,7 @@ and pick it up automatically on the first run after the limit resets.
 - **FavStash posts** (`maxPostsPerMonth`, check `get_account_plan_and_usage` before scheduling; each platform post
   counts as 1). Platform daily caps (e.g. Instagram's `quota` in `get_social_publishing_options`) work the same way.
   X also has its own monthly allowance (`maxXPostUnitsPerMonth`; a video post costs 1 unit, a post containing a URL costs 10,
-  so never put links in X captions). Schedule the Short in this order until a limit is reached: **TikTok, Instagram, X**. (X only on X days.) Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
+  so never put links in X captions). Schedule the Short in this order until a limit is reached: **TikTok, Instagram, X**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
   (episode, platform, media URLs, caption/title/tags ready to paste into `create_social_post`).
 - **ElevenLabs credits** (or any generation limit): if voice or transcription fails for quota, stop production for the day.
   Leave the topic unchecked in `topics.md`, note the pause in `episodes.md`, and continue on the next run.
