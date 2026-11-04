@@ -19,11 +19,25 @@ no human in the loop, so quality and accuracy checks are part of the job, not op
 ## Schedule (America/Chicago)
 | Day | What this run makes | Posts |
 |---|---|---|
-| Every day (Sun–Sat) | One standalone Short (62–80 s) | Same day 6:00 PM on **TikTok, Instagram Reel and X, every day** |
+| Every day (Sun–Sat) | One standalone Short (62–80 s) | Same day 6:00 PM: **X every day, Instagram every other day, TikTok Fridays** (see Cadence) |
 
-**Cadence (owner, 2026-11-04): every platform posts every day.** The day's Short goes to TikTok, Instagram and X at
-6:00 PM. If a platform already has a post in that day's slot (e.g. a manual backfill), skip that platform that day.
-(Replaces the 2026-11-02 every-other-day X rule.) That's about 30 X posts a month (1 X unit each).
+**Cadence (owner, 2026-11-04): post just enough to stay inside FavStash's 50 posts/month, with X > Instagram > TikTok.**
+Every day makes one Short; it posts at 6:00 PM on the platforms due that day:
+- **X: every day.**
+- **Instagram: every other day**, on dates an even number of days after 2026-11-02 (Nov 4, 6, ...; Dec 2, 4, ...;
+  check with `(date - date(2026,11,2)).days % 2 == 0`), so the alternation carries across month ends.
+- **TikTok: Fridays only.**
+
+That's 31 + 15 + 4 = 50 in a 31-day month (Nov 4–30: 27 + 14 + 4 = 45, exactly what was left). It uses the whole
+allowance, so: never post a platform on a day it isn't due, and never make up a missed slot later (a missed day just
+leaves those posts unused). If a platform already has a post in that day's slot (e.g. a manual backfill), skip it that day.
+
+**X hold:** X refused posts with `HTTP 402 credits depleted` on 2026-11-02, and every refused attempt still uses one
+FavStash post. While the line below says ON HOLD, don't attempt X at all (log "X on hold" in the summary). Only the owner
+can lift it, after topping up the X API balance; the session he tells changes it to `X: ACTIVE (since <date>)`.
+If X returns 402 again later, set it back to ON HOLD and tell the owner.
+
+`X: ON HOLD (credits depleted, since 2026-11-02)`
 
 The Saturday long video was discontinued on 2026-11-02 with YouTube (owner's choice). Saturdays make a normal Short;
 prefer a topic with a story arc. The long-video steps below (render_long.py, YouTube titles/chapters) are kept for reference only.
@@ -40,7 +54,7 @@ and pick it up automatically on the first run after the limit resets.
 - **FavStash posts** (`maxPostsPerMonth`, check `get_account_plan_and_usage` before scheduling; each platform post
   counts as 1). Platform daily caps (e.g. Instagram's `quota` in `get_social_publishing_options`) work the same way.
   X also has its own monthly allowance (`maxXPostUnitsPerMonth`; a video post costs 1 unit, a post containing a URL costs 10,
-  so never put links in X captions). Schedule the Short in this order until a limit is reached: **TikTok, Instagram, X**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
+  so never put links in X captions). Schedule the day's due platforms in this order until a limit is reached: **X, Instagram, TikTok**. Anything that didn't fit goes into the **Pending posts** table in `episodes.md`
   (episode, platform, media URLs, caption/title/tags ready to paste into `create_social_post`).
 - **ElevenLabs credits** (or any generation limit): if voice or transcription fails for quota, stop production for the day.
   Leave the topic unchecked in `topics.md`, note the pause in `episodes.md`, and continue on the next run.
