@@ -15,3 +15,5 @@ Posts that were ready but couldn't be scheduled because a limit was reached. The
 
 | Episode | Platform | Media URL(s) | Caption / title / tags | Parked on | Reason |
 |---|---|---|---|---|---|
+
+2026-11-05 note: ep05 "The Yard" was posted to Instagram only (post 77d97690-d1c3-47a1-b364-fbca9a034165, reel DfVsd3wAf1Q, published 2026-11-05 00:00 UTC = Nov 4 6 PM CT, 76.1 s) by an earlier session that did not update this log. Nov 5 run: nothing due (IG off-day, TikTok Fridays only, X on hold), metrics only.
