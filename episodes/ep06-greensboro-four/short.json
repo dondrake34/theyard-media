@@ -1,0 +1,12 @@
+{
+  "header": ["THE GREENSBORO", "FOUR"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which story next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["A. and T.,", "A&T,"],
+    ["nineteen sixty,", "1960,"],
+    ["twenty-fifth,", "25th,"]
+  ],
+  "cover": "cover_short.png"
+}
