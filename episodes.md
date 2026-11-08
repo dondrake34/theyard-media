@@ -10,6 +10,8 @@
 
 2026-11-04 run (Wed): Instagram due (even day), X on hold, TikTok not due (Fridays only). The ep05 Instagram reel (post 77d97690-d1c3-47a1-b364-fbca9a034165, 76.1 s, QUEUE for 2026-11-05 00:00 UTC = 6 PM CT) was already scheduled manually at 16:41 UTC, so the slot was filled and nothing new was produced. ep05 row above is superseded for IG.
 
+2026-11-07 note: no platform due (Saturday, odd day since Nov 2, X on hold); metrics only. FavStash shows ep05 "The Yard" was posted outside this repo: IG 77d97690 (Nov 5 00:00 UTC), TikTok a9f4544a (Nov 7 00:00 UTC), plus an X post of ep04 Fisk (8869f6a5, published Nov 6) that succeeded, so X credits may be restored. X stays ON HOLD until the owner lifts it. Topics: ep05 media/scripts are not in main.
+
 ## Pending posts
 Posts that were ready but couldn't be scheduled because a limit was reached. The next run with room schedules them, oldest first.
 
