@@ -16,7 +16,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] Wilberforce University and the AME Church
 
 ## Civil rights and history-making alumni
-- [ ] **L** The Greensboro Four: NC A&T students at the Woolworth's counter (1960)
+- [x] **L** The Greensboro Four: NC A&T students at the Woolworth's counter (1960) — ep06
 - [ ] Thurgood Marshall: Lincoln and Howard Law
 - [x] Martin Luther King Jr. at Morehouse at 15 — ep02
 - [ ] Toni Morrison at Howard

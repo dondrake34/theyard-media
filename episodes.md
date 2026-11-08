@@ -11,6 +11,7 @@
 2026-11-04 run (Wed): Instagram due (even day), X on hold, TikTok not due (Fridays only). The ep05 Instagram reel (post 77d97690-d1c3-47a1-b364-fbca9a034165, 76.1 s, QUEUE for 2026-11-05 00:00 UTC = 6 PM CT) was already scheduled manually at 16:41 UTC, so the slot was filled and nothing new was produced. ep05 row above is superseded for IG.
 
 2026-11-07 note: no platform due (Saturday, odd day since Nov 2, X on hold); metrics only. FavStash shows ep05 "The Yard" was posted outside this repo: IG 77d97690 (Nov 5 00:00 UTC), TikTok a9f4544a (Nov 7 00:00 UTC), plus an X post of ep04 Fisk (8869f6a5, published Nov 6) that succeeded, so X credits may be restored. X stays ON HOLD until the owner lifts it. Topics: ep05 media/scripts are not in main.
+| 06 | episodes/ep06-greensboro-four | 2026-11-08 | Short | The Greensboro Four: NC A&T freshmen and the Woolworth's sit-in (Feb 1, 1960) | — | IG c3b2fb29-5821-40a4-a7fa-c30b5c9b6f2c 2026-11-09 00:00 (6 PM CST) | 81.3 s. 7 claims, 2+ sources each (meta.md; sources found via search, page fetches blocked). X on hold, TikTok not due (Sunday). Media in `media/ep06-greensboro-four/` (raw URLs used the run branch, not main). |
 
 ## Pending posts
 Posts that were ready but couldn't be scheduled because a limit was reached. The next run with room schedules them, oldest first.
@@ -21,3 +22,5 @@ Posts that were ready but couldn't be scheduled because a limit was reached. The
 2026-11-05 note: ep05 "The Yard" was posted to Instagram only (post 77d97690-d1c3-47a1-b364-fbca9a034165, reel DfVsd3wAf1Q, published 2026-11-05 00:00 UTC = Nov 4 6 PM CT, 76.1 s) by an earlier session that did not update this log. Nov 5 run: nothing due (IG off-day, TikTok Fridays only, X on hold), metrics only.
 
 2026-11-06 run (Friday): metrics snapshot done (no ALERT; TikTok 20 followers). Due today: TikTok (Friday) and Instagram (even day); X on hold, not attempted (note: an X post 8869f6a5 of the ep04 video went out 2026-11-06 13:54 UTC, apparently posted manually, so the X balance may have been topped up; owner has not lifted the hold in PIPELINE.md). ElevenLabs download host is still blocked (elevenlabsusercontent.com 403 via proxy), so no new Short could be produced. Instead the already-QA'd ep05 "The Yard" (never posted to TikTok) was scheduled on TikTok for 2026-11-07 00:00 UTC (6 PM CT): post a9f4544a-289a-4c64-8ba8-477cce1abad2, QUEUE. Instagram slot left empty (ep05 already on IG; no new content). Topic order unchanged: next new topic is marching bands.
+
+2026-11-08 run (Sunday): earlier run branches merged into this branch (main never received them). Metrics snapshot done, no ALERT (TikTok 27 followers). ElevenLabs download host works again. ep06 made and scheduled on Instagram only.
