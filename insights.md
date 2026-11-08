@@ -2,6 +2,12 @@
 
 Updated every Sunday from analytics. Newest first. Include numbers.
 
+## Week 2 review (2026-11-08)
+- TikTok lifetime views: ep04 Fisk 1,211 (132 likes, 11 shares), ep01 Bethune 956 (134 likes, 14 shares), ep03 Morrill 713, ep02 MLK 689 (16 shares), ep05 The Yard 446 after ~1.5 days (40 likes). Followers 5 -> 27. Founder/people stories (Fisk, Bethune) beat the explainer topics.
+- Instagram: views 126-171 per Reel, tiny reach. ep05 had the lowest skip rate yet (39.5% vs 52-65%) and 11 s avg watch; only 0-4 likes. Posting every other day now.
+- X: 3 posts, 5-19 impressions each, 0 followers, 0 engagement. No signal yet.
+- Next: keep people-and-struggle stories (Greensboro Four ep06, Thurgood Marshall, Katherine Johnson) ahead of explainers.
+
 ## Week 1 review (2026-11-01; only 3 days of data, treat as early signals)
 - TikTok (lifetime as of Nov 1): ep01 Bethune 470 views / 56 likes / 11 shares (3 days); ep02 MLK 399 / 27 / 16 shares (2 days);
   ep03 Morrill Act 320 / 31 / 1 (1 day). ep03 had the fastest first day (320 in ~19 h vs ep01's 236 after its first day), so a
