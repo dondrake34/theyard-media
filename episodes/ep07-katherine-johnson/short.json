@@ -1,0 +1,16 @@
+{
+  "header": ["KATHERINE", "JOHNSON"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which scientist next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["nineteen thirty-seven,", "1937,"],
+    ["nineteen fifty-three,", "1953,"],
+    ["nineteen sixty-one.", "1961."],
+    ["nineteen sixty-two,", "1962,"],
+    ["twenty fifteen,", "2015,"],
+    ["one hundred and one.", "101."],
+    ["eighteen", "18"]
+  ],
+  "cover": "cover_short.png"
+}
