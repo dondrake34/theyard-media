@@ -21,7 +21,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [x] Martin Luther King Jr. at Morehouse at 15 — ep02
 - [ ] Toni Morrison at Howard
 - [ ] Oprah Winfrey at Tennessee State
-- [ ] Katherine Johnson at West Virginia State (NASA "Hidden Figures")
+- [x] Katherine Johnson at West Virginia State (NASA "Hidden Figures") — ep07
 - [ ] The Tuskegee Airmen trained at Tuskegee Institute
 - [ ] Ella Baker and Shaw University: founding of SNCC (1960)
 - [ ] The Orangeburg Massacre at South Carolina State (1968)
@@ -63,6 +63,9 @@ Every fact still gets two sources at production time. These are leads, not verif
 Mon: culture (e.g. "The Yard": what it means) · Tue: civil rights (Greensboro Four short version, or Ella Baker/SNCC) ·
 Wed: firsts (Alcorn State, first Black land-grant) · Thu: alumni (Katherine Johnson) · Fri: culture (marching bands) ·
 Sat long: Cheyney University (first HBCU) — real founder arc.
+
+- [ ] Dorothy Vaughan: led Langley's West Area Computing unit (Katherine Johnson's supervisor; verify her HBCU, Wilberforce)
+- [ ] W. W. Schieffelin Claytor: third Black American math Ph.D., taught at West Virginia State and Howard (verify)
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)

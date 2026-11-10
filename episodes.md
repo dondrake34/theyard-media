@@ -12,6 +12,7 @@
 
 2026-11-07 note: no platform due (Saturday, odd day since Nov 2, X on hold); metrics only. FavStash shows ep05 "The Yard" was posted outside this repo: IG 77d97690 (Nov 5 00:00 UTC), TikTok a9f4544a (Nov 7 00:00 UTC), plus an X post of ep04 Fisk (8869f6a5, published Nov 6) that succeeded, so X credits may be restored. X stays ON HOLD until the owner lifts it. Topics: ep05 media/scripts are not in main.
 | 06 | episodes/ep06-greensboro-four | 2026-11-08 | Short | The Greensboro Four: NC A&T freshmen and the Woolworth's sit-in (Feb 1, 1960) | — | IG c3b2fb29-5821-40a4-a7fa-c30b5c9b6f2c 2026-11-09 00:00 (6 PM CST) | 81.3 s. 7 claims, 2+ sources each (meta.md; sources found via search, page fetches blocked). X on hold, TikTok not due (Sunday). Media in `media/ep06-greensboro-four/` (raw URLs used the run branch, not main). |
+| 07 | episodes/ep07-katherine-johnson | 2026-11-10 | Short | Katherine Johnson: West Virginia State (1937, age 18, math + French, mentor W. W. Claytor) to NASA Langley; Shepard 1961, Glenn 1962 recheck, Medal of Freedom 2015 | — | IG d1c7e6e8-3ce5-4604-be91-c6c8723d0c13 2026-11-11 00:00 (6 PM CST) | 78.5 s. 8 claims, 2+ sources each (meta.md; page fetches blocked, sources via search). Transcript 100% match, H. B. C. U. x3 OK. X on hold, TikTok not due (Tuesday). Media in `media/ep07-katherine-johnson/` (raw URLs on the run branch). |
 
 ## Pending posts
 Posts that were ready but couldn't be scheduled because a limit was reached. The next run with room schedules them, oldest first.
@@ -26,3 +27,5 @@ Posts that were ready but couldn't be scheduled because a limit was reached. The
 2026-11-08 run (Sunday): earlier run branches merged into this branch (main never received them). Metrics snapshot done, no ALERT (TikTok 27 followers). ElevenLabs download host works again. ep06 made and scheduled on Instagram only.
 
 2026-11-09 run (Monday): earlier run branches merged. Metrics snapshot done, no ALERT (TikTok 28 followers; ep06 Greensboro Four Reel already at 1,227 views on IG). Nothing due today: Instagram is an off day (7 days after 2026-11-02), TikTok is Fridays only, X is on hold (not attempted). No Short produced. FavStash posts used this month: 6 of 50.
+
+2026-11-10 run (Tuesday): metrics snapshot done, no ALERT (TikTok 31 followers; ep06 IG Reel 1,243 views, 36.9% skip). Due: Instagram (8 days after Nov 2); X on hold (not attempted); TikTok Fridays only. ep07 Katherine Johnson made and scheduled on Instagram. FavStash posts this month: 7 of 50 after this post.
