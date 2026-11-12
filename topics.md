@@ -5,7 +5,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 
 ## Founders and origin stories
 - [x] **L** Mary McLeod Bethune: $1.50 and five girls (Bethune-Cookman) — ep01
-- [ ] **L** Cheyney University: America's first HBCU (1837) and the Quaker who funded it
+- [x] **L** Cheyney University: America's first HBCU (1837) and the Quaker who funded it — ep08 (Short)
 - [ ] **L** Booker T. Washington and the brick-making students who built Tuskegee
 - [ ] **L** Howard University: founded right after the Civil War
 - [ ] Spelman's first classes in a church basement
@@ -66,6 +66,10 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 
 - [ ] Dorothy Vaughan: led Langley's West Area Computing unit (Katherine Johnson's supervisor; verify her HBCU, Wilberforce)
 - [ ] W. W. Schieffelin Claytor: third Black American math Ph.D., taught at West Virginia State and Howard (verify)
+
+- [ ] Fanny Jackson Coppin's own story: Oberlin, the ICY's teacher training, missionary work in South Africa (verify dates; Coppin State, Britannica)
+- [ ] Octavius Catto: Institute for Colored Youth teacher and civil rights figure in Philadelphia (verify)
+- [ ] Lincoln University (PA) vs. Cheyney: "oldest" vs. "first degree-granting" HBCU explainer
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
