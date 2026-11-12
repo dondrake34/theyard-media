@@ -1,0 +1,16 @@
+{
+  "header": ["AMERICA'S OLDEST", "HBCU"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which founder next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["ten thousand dollars.", "$10,000."],
+    ["ten thousand dollars,", "$10,000,"],
+    ["one tenth", "1/10"],
+    ["eighteen thirty-seven,", "1837,"],
+    ["eighteen sixty-nine,", "1869,"],
+    ["thirty years,", "30 years,"],
+    ["nineteen hundreds,", "1900s,"]
+  ],
+  "cover": "cover_short.png"
+}
