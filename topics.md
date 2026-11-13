@@ -17,7 +17,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 
 ## Civil rights and history-making alumni
 - [x] **L** The Greensboro Four: NC A&T students at the Woolworth's counter (1960) — ep06
-- [ ] Thurgood Marshall: Lincoln and Howard Law
+- [x] Thurgood Marshall: Lincoln and Howard Law — ep09
 - [x] Martin Luther King Jr. at Morehouse at 15 — ep02
 - [ ] Toni Morrison at Howard
 - [ ] Oprah Winfrey at Tennessee State
@@ -73,3 +73,5 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
+- [ ] Charles Hamilton Houston: the Howard Law dean who trained a generation of civil rights lawyers (verify; BlackPast, Britannica)
+- [ ] Donald Gaines Murray: the Amherst grad who integrated Maryland's law school in 1935-36 (verify; Maryland State Archives)
