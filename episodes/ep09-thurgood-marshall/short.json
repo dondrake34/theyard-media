@@ -1,0 +1,15 @@
+{
+  "header": ["THURGOOD MARSHALL", "HBCU MADE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which legend next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["nineteen thirty,", "1930,"],
+    ["nineteen thirty-three,", "1933,"],
+    ["nineteen thirty-five,", "1935,"],
+    ["nineteen fifty-four,", "1954,"],
+    ["nineteen sixty-seven,", "1967,"],
+    ["versus", "v."]
+  ],
+  "cover": "cover_short.png"
+}
