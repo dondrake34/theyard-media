@@ -6,7 +6,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 ## Founders and origin stories
 - [x] **L** Mary McLeod Bethune: $1.50 and five girls (Bethune-Cookman) — ep01
 - [x] **L** Cheyney University: America's first HBCU (1837) and the Quaker who funded it — ep08 (Short)
-- [ ] **L** Booker T. Washington and the brick-making students who built Tuskegee
+- [x] **L** Booker T. Washington and the brick-making students who built Tuskegee — ep10
 - [ ] **L** Howard University: founded right after the Civil War
 - [ ] Spelman's first classes in a church basement
 - [ ] Morehouse's beginnings in Augusta
@@ -70,6 +70,10 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 - [ ] Fanny Jackson Coppin's own story: Oberlin, the ICY's teacher training, missionary work in South Africa (verify dates; Coppin State, Britannica)
 - [ ] Octavius Catto: Institute for Colored Youth teacher and civil rights figure in Philadelphia (verify)
 - [ ] Lincoln University (PA) vs. Cheyney: "oldest" vs. "first degree-granting" HBCU explainer
+
+- [ ] Lewis Adams: the formerly enslaved tradesman who helped bring Tuskegee to life (verify trades; Wikipedia, NPS tuin)
+- [ ] Robert R. Taylor: first accredited Black architect (MIT), designed Tuskegee buildings students built (verify; NPS "One Brick at a Time")
+- [ ] Olivia Davidson: Tuskegee co-founder/fundraiser (verify; NPS, Encyclopedia of Alabama)
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
