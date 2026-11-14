@@ -52,6 +52,15 @@ def captions():
         if cur:
             sents.append(cur)
 
+        nocut = set()  # token indices that must not start a new caption (inside a multi-word display phrase)
+        for x, _ in DISPLAY:
+            xt = x.split()
+            if len(xt) < 2:
+                continue
+            for k in range(len(toks) - len(xt) + 1):
+                if " ".join(toks[k:k + len(xt)]).startswith(x):
+                    nocut.update(range(k + 1, k + len(xt)))
+
         def split(g):
             s = " ".join(toks[j] for j in g)
             if len(s) <= 34 or len(g) < 4:
@@ -60,6 +69,8 @@ def captions():
             for c in range(2, len(g) - 1):
                 if re.fullmatch(r"[A-Z]\.", toks[g[c - 1]]) and re.fullmatch(r"[A-Z]\.[,;:]?", toks[g[c]]):
                     continue  # never split an acronym like "H. B. C. U.," across two captions
+                if g[c] in nocut:
+                    continue  # never split a display swap like "nineteen fifteen," across two captions
                 l, r = " ".join(toks[j] for j in g[:c]), " ".join(toks[j] for j in g[c:])
                 sc = abs(len(l) - len(r)) - (12 if l.endswith(",") else 0)
                 if sc < bs:

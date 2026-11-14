@@ -1,0 +1,16 @@
+{
+  "header": ["TUSKEGEE'S BRICKS", "HBCU MADE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which founder next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["eighteen eighty-one,", "1881,"],
+    ["nineteen fifteen,", "1915,"],
+    ["two thousand dollars", "$2,000"],
+    ["fifteen dollars.", "$15."],
+    ["fifteen hundred", "1,500"],
+    ["one hundred", "100"],
+    ["thirty", "30"]
+  ],
+  "cover": "cover_short.png"
+}
