@@ -59,7 +59,13 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] Jubilee Hall: "the South's first permanent structure built for the education of Black students" (Fisk) — wording varies, verify
 - [ ] Fisk Jubilee Singers' 2021 Grammy (Best Roots Gospel Album; verify) — modern follow-up to ep04
 
-## Next week's order (set 2026-11-01 weekly review)
+## Next week's order (set 2026-11-15 weekly review)
+Production days (posting days only): Mon 11/16 (IG): civil rights — Ella Baker and Shaw University, the founding of SNCC (1960) ·
+Wed 11/18 (IG): founder struggle — Spelman's first classes in a church basement · Fri 11/20 (IG + TikTok): civil rights —
+the Orangeburg Massacre at South Carolina State (1968; handle with care, sourced and factual) · Sun 11/22 (IG): culture — HBCU marching bands.
+Why: Greensboro Four Reel got ~8x the views of any other; protest moments and founder struggles beat biographies and explainers.
+
+## Earlier order (set 2026-11-01 weekly review)
 Mon: culture (e.g. "The Yard": what it means) · Tue: civil rights (Greensboro Four short version, or Ella Baker/SNCC) ·
 Wed: firsts (Alcorn State, first Black land-grant) · Thu: alumni (Katherine Johnson) · Fri: culture (marching bands) ·
 Sat long: Cheyney University (first HBCU) — real founder arc.
