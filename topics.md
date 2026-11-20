@@ -8,7 +8,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [x] **L** Cheyney University: America's first HBCU (1837) and the Quaker who funded it — ep08 (Short)
 - [x] **L** Booker T. Washington and the brick-making students who built Tuskegee — ep10
 - [ ] **L** Howard University: founded right after the Civil War
-- [ ] Spelman's first classes in a church basement
+- [x] Spelman's first classes in a church basement — ep11
 - [ ] Morehouse's beginnings in Augusta
 - [x] Fisk University's Jubilee Singers: singing to save their school — ep04
 - [ ] **L** Hampton Institute and the Emancipation Oak
@@ -80,6 +80,9 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 - [ ] Lewis Adams: the formerly enslaved tradesman who helped bring Tuskegee to life (verify trades; Wikipedia, NPS tuin)
 - [ ] Robert R. Taylor: first accredited Black architect (MIT), designed Tuskegee buildings students built (verify; NPS "One Brick at a Time")
 - [ ] Olivia Davidson: Tuskegee co-founder/fundraiser (verify; NPS, Encyclopedia of Alabama)
+
+- [ ] Rev. Frank Quarles and Friendship Baptist Church: the Atlanta church that housed Spelman and Morehouse's early classes (verify)
+- [ ] Spelman's first graduates (1901): Jane Anna Granderson and Claudia White (verify)
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
