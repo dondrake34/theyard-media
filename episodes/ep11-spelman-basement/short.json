@@ -1,0 +1,15 @@
+{
+  "header": ["SPELMAN'S BASEMENT", "HBCU MADE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Which founder next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["April eleventh,", "April 11,"],
+    ["eighteen eighty-one.", "1881."],
+    ["eighteen eighty-two,", "1882,"],
+    ["eighteen eighty-four,", "1884,"],
+    ["nineteen oh one,", "1901,"],
+    ["nineteen twenty-four,", "1924,"]
+  ],
+  "cover": "cover_short.png"
+}

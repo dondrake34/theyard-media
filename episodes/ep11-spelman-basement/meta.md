@@ -1,10 +1,16 @@
 # Ep. 11 — Spelman College: eleven students in a church basement (1881)
-Standalone Short (founder-struggle topic per the 2026-11-15 weekly order). Planned for Instagram 2026-11-18 6 PM CST
-(16 days after 2026-11-02: IG due; TikTok Fridays only; X on hold).
+Standalone Short (founder-struggle topic per the 2026-11-15 weekly order). Originally planned for Instagram 2026-11-18 6 PM CST;
+posted 2026-11-20 instead (see Status).
 
-**Status: script and research done; voice NOT generated.** The ElevenLabs MCP server failed to connect for the whole
-2026-11-18 run (HTTP 400 "CLIENT_HTTP_NOT_IMPLEMENTED" on connect, retried several times), so no voiceover, timing,
-scenes or render. Resume from here: generate voice from `narration.txt`, then steps 5–13.
+**Status:** 2026-11-18 run paused (ElevenLabs MCP server would not connect). **Resumed and finished 2026-11-20** (Friday):
+voice generated (Terrance, eleven_v4, 74.5 s, 1 take), transcript 100% match, H. B. C. U. spoken as four letters,
+scenes/render/QA done. Posts 2026-11-20 6 PM CST on TikTok (Friday) and Instagram (18 days after 2026-11-02); X on hold.
+
+## Captions
+TikTok: HBCU history: Spelman College began in 1881 with eleven students in a church basement in Atlanta. Their teachers, Sophia Packard and Harriet Giles, had almost no money. Which HBCU founder story should we tell next? 👇
+#HBCU #HBCUHistory #Spelman #BlackHistory #HistoryTok
+
+Instagram: same first lines, tags #HBCU #HBCUHistory #SpelmanCollege #BlackHistory #WomensHistory
 
 ## Fact check (two sources per claim; page fetches blocked in this session, sources found via web search)
 | Claim | Sources |
