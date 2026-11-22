@@ -1,0 +1,20 @@
+{
+  "header": ["THE MARCHING 100", "HBCU MADE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Best band in the land?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["nineteen forty-one,", "1941,"],
+    ["nineteen forty-six,", "1946,"],
+    ["Florida A and M", "Florida A&M"],
+    ["sixteen", "16"],
+    ["Marching One Hundred,", "Marching 100,"],
+    ["Marching One Hundred", "Marching 100"],
+    ["nineteen eighty-nine,", "1989,"],
+    ["two hundred years", "200 years"],
+    ["two thousand seven,", "2007,"],
+    ["fifty-two years,", "52 years,"],
+    ["nineteen ninety-eight.", "1998."]
+  ],
+  "cover": "cover_short.png"
+}

@@ -29,7 +29,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 
 ## Culture and traditions
 - [ ] **L** Why HBCU homecoming is the biggest party in America
-- [ ] HBCU marching bands: the battle of the bands is a sport
+- [x] HBCU marching bands: the battle of the bands is a sport — ep12 (told through William P. Foster and the FAMU Marching 100)
 - [x] "The Yard": what it means and why it matters — ep05
 - [ ] The Divine Nine: what Black Greek-letter organizations stand for
 - [ ] Step shows: history of stepping
@@ -59,7 +59,15 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] Jubilee Hall: "the South's first permanent structure built for the education of Black students" (Fisk) — wording varies, verify
 - [ ] Fisk Jubilee Singers' 2021 Grammy (Best Roots Gospel Album; verify) — modern follow-up to ep04
 
-## Next week's order (set 2026-11-15 weekly review)
+## Next week's order (set 2026-11-22 weekly review)
+Posting days only: Tue 11/24 (IG): civil rights — Ella Baker and Shaw University, the founding of SNCC (1960) ·
+Thu 11/26 (IG): civil rights — the Orangeburg Massacre at South Carolina State (1968; careful, sourced, factual) ·
+Fri 11/27 (TikTok): founder struggle — Hampton Institute and the Emancipation Oak ·
+Sat 11/28 (IG): culture, timely — the Bayou Classic (Grambling vs Southern; verify it is played that weekend) ·
+Mon 11/30 (IG): founder story — Howard University founded right after the Civil War.
+Why: founder-struggle stories are TikTok's top 3 (Fisk, Bethune, Spelman); dramatic single moments win on Instagram (Greensboro).
+
+## Earlier order (set 2026-11-15 weekly review)
 Production days (posting days only): Mon 11/16 (IG): civil rights — Ella Baker and Shaw University, the founding of SNCC (1960) ·
 Wed 11/18 (IG): founder struggle — Spelman's first classes in a church basement · Fri 11/20 (IG + TikTok): civil rights —
 the Orangeburg Massacre at South Carolina State (1968; handle with care, sourced and factual) · Sun 11/22 (IG): culture — HBCU marching bands.
@@ -88,3 +96,7 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 (Add requests and questions from viewers here, with the date seen.)
 - [ ] Charles Hamilton Houston: the Howard Law dean who trained a generation of civil rights lawyers (verify; BlackPast, Britannica)
 - [ ] Donald Gaines Murray: the Amherst grad who integrated Maryland's law school in 1935-36 (verify; Maryland State Archives)
+
+- [ ] Tuskegee's band: often called the oldest continually active HBCU band (1890s; sources differ on 1890 vs 1895, verify)
+- [ ] FAMU Marching 100 at the Louvre for Louis Vuitton (Paris, 2022), led by Shelby Chipman, who marched in Paris in 1989 (verify)
+- [ ] Southern University's "Human Jukebox" and the Bayou Classic Battle of the Bands (verify)

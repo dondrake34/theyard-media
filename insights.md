@@ -2,6 +2,17 @@
 
 Updated every Sunday from analytics. Newest first. Include numbers.
 
+## Week 4 review (2026-11-22)
+- Only 2 posts this week (ep11 Spelman on Instagram + TikTok, Nov 20). The Nov 16 and Nov 18 Instagram slots were lost to the ElevenLabs outage.
+- TikTok: ep11 Spelman is the fastest starter yet: 1,057 views in ~1.7 days (Thurgood Marshall had 583 at the same age), 138 likes,
+  18 shares (most of any video), 9 comments. Back catalog keeps growing: ep04 Fisk 1,495 -> 1,817 (+322 this week), ep01 Bethune 1,090 -> 1,190.
+  Top 3 TikToks are all founder-struggle stories (Fisk 1,817, Bethune 1,190, Spelman 1,057). Followers 40 -> 49.
+- Instagram: Spelman 143 views, 57.6% skip, 11.9 s avg watch (typical, not a breakout). ep10 Tuskegee bricks kept climbing (157 -> 246 views,
+  16.1 s avg watch, 3 saves). ep06 Greensboro (1,252) is still the only IG breakout; 30-day IG views 2,668, reach 2,313.
+- X: still on hold, no new posts, 0 followers.
+- Signal: founder struggle wins on TikTok; on Instagram a single dramatic moment (Greensboro) wins. ep12 (Foster "kept out of one band")
+  tests a dramatic-moment opener on a culture topic. Next week: founder struggle on Friday's TikTok, dramatic moments on Instagram.
+
 ## Week 3 review (2026-11-15)
 - TikTok lifetime views: ep04 Fisk 1,495 (167 likes), ep01 Bethune 1,090 (150 likes, 16 shares), ep03 Morrill 735 (11 comments, most of any video),
   ep02 MLK 710 (16 shares), ep05 The Yard 691, ep09 Thurgood Marshall 583 after ~1.7 days (faster start than The Yard's 446 at 1.5 days).
