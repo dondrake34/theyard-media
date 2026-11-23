@@ -32,12 +32,15 @@ That's 31 + 15 + 4 = 50 in a 31-day month (Nov 4–30: 27 + 14 + 4 = 45, exactly
 allowance, so: never post a platform on a day it isn't due, and never make up a missed slot later (a missed day just
 leaves those posts unused). If a platform already has a post in that day's slot (e.g. a manual backfill), skip it that day.
 
-**X hold:** X refused posts with `HTTP 402 credits depleted` on 2026-11-02, and every refused attempt still uses one
-FavStash post. While the line below says ON HOLD, don't attempt X at all (log "X on hold" in the summary). Only the owner
-can lift it, after topping up the X API balance; the session he tells changes it to `X: ACTIVE (since <date>)`.
-If X returns 402 again later, set it back to ON HOLD and tell the owner.
+**X status and 402 errors (owner, 2026-11-23):** FavStash publishes to X through its own X developer app and pays the
+X API per-post fees itself (that's what its `maxXPostUnitsPerMonth` allowance is). So `HTTP 402 credits depleted` means
+**FavStash's** X API balance ran out, not the owner's: there is nothing for the owner to top up. X refused posts with that
+error on 2026-11-02 and worked again by 2026-11-06 without any change on our side. If X returns 402:
+don't retry that post the same day, leave that day's X slot empty (no make-up), keep X ACTIVE and try again on the next
+run, and tell the owner to contact FavStash support (message template in `episodes.md` under "FavStash support").
+Only pause X if the owner says so. Refused attempts still use one FavStash post each.
 
-`X: ON HOLD (credits depleted, since 2026-11-02)`
+`X: ACTIVE (since 2026-11-23; hold from 2026-11-02 lifted by owner)`
 
 The Saturday long video was discontinued on 2026-11-02 with YouTube (owner's choice). Saturdays make a normal Short;
 prefer a topic with a story arc. The long-video steps below (render_long.py, YouTube titles/chapters) are kept for reference only.
@@ -206,8 +209,8 @@ One call per publish time. Use a new `clientRequestId` such as `theyard-epNN-sho
   media `{url, kind: "video", durationSeconds, thumbnailTimestampMs: <cover frame ms printed by make_short>}`.
 - Instagram target: `settings: {contentType: "reel", shareToFeed: true, isAiGenerated: true}`, media with `thumbnailUrl` = cover.
 - X target: no `settings` needed; media `{url, kind: "video", durationSeconds, altText}`. If X fails with
-  `HTTP 402 credits depleted`, the X API pay-per-use balance behind the connection is empty: don't retry, leave X for that
-  day, and tell the owner to top up / contact FavStash.
+  `HTTP 402 credits depleted`, FavStash's X API balance is empty (see "X status" above): don't retry, leave X for that
+  day, try again next run, and tell the owner to contact FavStash support.
 - *(Retired)* YouTube target: `settings: {title, visibility: "public", madeForKids: false, uploadCertified: true,
   containsSyntheticMedia: true, notifySubscribers: true, tags: [...]}` (no `contentType` key; YouTube detects Shorts),
   media with `thumbnailUrl` (main thumbnail for long, cover for Short).
