@@ -23,7 +23,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] Oprah Winfrey at Tennessee State
 - [x] Katherine Johnson at West Virginia State (NASA "Hidden Figures") — ep07
 - [ ] The Tuskegee Airmen trained at Tuskegee Institute
-- [ ] Ella Baker and Shaw University: founding of SNCC (1960)
+- [x] Ella Baker and Shaw University: founding of SNCC (1960) — ep13
 - [ ] The Orangeburg Massacre at South Carolina State (1968)
 - [ ] Jackson State shooting (1970)
 
@@ -100,3 +100,6 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 - [ ] Tuskegee's band: often called the oldest continually active HBCU band (1890s; sources differ on 1890 vs 1895, verify)
 - [ ] FAMU Marching 100 at the Louvre for Louis Vuitton (Paris, 2022), led by Shelby Chipman, who marched in Paris in 1989 (verify)
 - [ ] Southern University's "Human Jukebox" and the Bayou Classic Battle of the Bands (verify)
+- [ ] Diane Nash and the Nashville students who finished the 1961 Freedom Rides (Fisk; verify)
+- [ ] Shaw University: founded 1865 in Raleigh, one of the South's oldest HBCUs (verify)
+- [ ] Fannie Lou Hamer, SNCC and Freedom Summer 1964 (verify HBCU tie before using)
