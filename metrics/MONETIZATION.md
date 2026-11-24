@@ -27,13 +27,13 @@ Updated 2026-11-24 by the daily run. Source: FavStash analytics snapshots (`metr
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | unknown | 500 | unknown |
+| followers | 5 | 500 | 1.0% |
 
 ## Instagram Subscriptions — 10,000 followers
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | unknown | 10,000 | unknown |
+| followers | 5 | 10,000 | 0.1% |
 
 ## Alerts sent
 

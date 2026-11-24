@@ -1,0 +1,17 @@
+{
+  "header": ["ELLA BAKER & SNCC", "HBCU MADE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Who's next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["nineteen sixty,", "1960,"],
+    ["nineteen twenty-seven,", "1927,"],
+    ["Doctor King's", "Dr. King's"],
+    ["Doctor King", "Dr. King"],
+    ["eight hundred dollars,", "$800,"],
+    ["April fifteenth to seventeenth.", "April 15 to 17."],
+    ["nineteen sixty-one,", "1961,"],
+    ["nineteen sixty-four.", "1964."]
+  ],
+  "cover": "cover_short.png"
+}
