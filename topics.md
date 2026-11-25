@@ -48,7 +48,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [ ] HBCU women who changed science
 - [ ] Famous HBCU commencement speakers
 - [ ] HBCUs founded by formerly enslaved people
-- [ ] Alcorn State: the first Black land-grant college (1871), two decades before the 1890 Act (verify)
+- [x] Alcorn State: the first Black land-grant college (1871), two decades before the 1890 Act — ep14
 - [ ] Central State (Ohio): the newest 1890 land-grant (designated 2014; verify)
 - [ ] **L** The 1890 universities and extension: Black county agents who brought farming science to rural families (e.g. Tuskegee's Movable School; verify)
 
@@ -91,6 +91,10 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 
 - [ ] Rev. Frank Quarles and Friendship Baptist Church: the Atlanta church that housed Spelman and Morehouse's early classes (verify)
 - [ ] Spelman's first graduates (1901): Jane Anna Granderson and Claudia White (verify)
+
+- [ ] Hiram Revels's own story: AME minister, Civil War chaplain, Senate speech for integrated schools (verify; Senate.gov, NPS)
+- [ ] Medgar Evers at Alcorn: football, the Army in WWII, and his path to the NAACP (verify grad year: 1950 vs 1952)
+- [ ] Oakland Memorial Chapel: the 1830s chapel still standing at Alcorn (verify; NPS National Register)
 
 ## Ideas from comments
 (Add requests and questions from viewers here, with the date seen.)
