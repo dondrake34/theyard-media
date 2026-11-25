@@ -1,0 +1,18 @@
+{
+  "header": ["ALCORN STATE, 1871", "HBCU FIRST"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Who's next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["eighteen seventy,", "1870,"],
+    ["February twenty-fifth,", "February 25,"],
+    ["eighteen seventy-one,", "1871,"],
+    ["eighteen ninety", "1890"],
+    ["A and M", "A&M"],
+    ["eighteen seventy-eight,", "1878,"],
+    ["nineteen seventy-four.", "1974."],
+    ["N. A. A. C. P.'s", "NAACP's"],
+    ["twenty years", "20 years"]
+  ],
+  "cover": "cover_short.png"
+}

@@ -47,7 +47,7 @@ def captions():
             cur.append(k)
             nxt = toks[k + 1] if k + 1 < len(toks) else ""
             letter = re.fullmatch(r"[A-Z]\.", t) is not None
-            if t[-1] in ".?!" and not (letter and re.fullmatch(r"[A-Z]\.[,;:]?", nxt or "x")) and not (t == "D." and nxt):
+            if t[-1] in ".?!" and not (letter and re.fullmatch(r"[A-Z]\.('s)?[,;:]?", nxt or "x")) and not (t == "D." and nxt):
                 sents.append(cur); cur = []
         if cur:
             sents.append(cur)
@@ -67,7 +67,7 @@ def captions():
                 return [g]
             best, bs = 2, 1e9
             for c in range(2, len(g) - 1):
-                if re.fullmatch(r"[A-Z]\.", toks[g[c - 1]]) and re.fullmatch(r"[A-Z]\.[,;:]?", toks[g[c]]):
+                if re.fullmatch(r"[A-Z]\.", toks[g[c - 1]]) and re.fullmatch(r"[A-Z]\.('s)?[,;:]?", toks[g[c]]):
                     continue  # never split an acronym like "H. B. C. U.," across two captions
                 if g[c] in nocut:
                     continue  # never split a display swap like "nineteen fifteen," across two captions
