@@ -24,7 +24,7 @@ Every fact still gets two sources at production time. These are leads, not verif
 - [x] Katherine Johnson at West Virginia State (NASA "Hidden Figures") — ep07
 - [ ] The Tuskegee Airmen trained at Tuskegee Institute
 - [x] Ella Baker and Shaw University: founding of SNCC (1960) — ep13
-- [ ] The Orangeburg Massacre at South Carolina State (1968)
+- [x] The Orangeburg Massacre at South Carolina State (1968) — ep15
 - [ ] Jackson State shooting (1970)
 
 ## Culture and traditions
@@ -107,3 +107,6 @@ Sat long: Cheyney University (first HBCU) — real founder arc.
 - [ ] Diane Nash and the Nashville students who finished the 1961 Freedom Rides (Fisk; verify)
 - [ ] Shaw University: founded 1865 in Raleigh, one of the South's oldest HBCUs (verify)
 - [ ] Fannie Lou Hamer, SNCC and Freedom Summer 1964 (verify HBCU tie before using)
+- [ ] Cleveland Sellers: SNCC organizer wounded at Orangeburg, jailed, pardoned 1993, later president of Voorhees (verify)
+- [ ] Claflin University: Orangeburg's other HBCU, founded 1869 (verify)
+- [ ] Jackson State 1970: Phillip Gibbs and James Earl Green, eleven days after Kent State (verify)
