@@ -1,6 +1,6 @@
 # Monetization progress
 
-Updated 2026-11-25 by the daily run. Source: FavStash analytics snapshots (`metrics/snapshots.jsonl`). Rolling windows marked * have less history than the window so far.
+Updated 2026-11-26 by the daily run. Source: FavStash analytics snapshots (`metrics/snapshots.jsonl`). Rolling windows marked * have less history than the window so far.
 
 ## X Creator Revenue Sharing — Premium + 500 verified followers + 5,000,000 organic impressions/3 months (check X → Monetization settings)
 
@@ -14,14 +14,14 @@ Updated 2026-11-25 by the daily run. Source: FavStash analytics snapshots (`metr
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | 57 | 10,000 | 0.6% |
-| views on >1-min videos (30d) * | 10,024 | 100,000 | 10.0% |
+| followers | 58 | 10,000 | 0.6% |
+| views on >1-min videos (30d) * | 10,773 | 100,000 | 10.8% |
 
 ## TikTok LIVE gifts — 1,000 followers
 
 | Requirement | Now | Target | Progress |
 |---|---|---|---|
-| followers | 57 | 1,000 | 5.7% |
+| followers | 58 | 1,000 | 5.8% |
 
 ## Instagram Gifts — 500 followers
 
