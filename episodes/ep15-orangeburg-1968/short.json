@@ -1,0 +1,14 @@
+{
+  "header": ["ORANGEBURG, 1968", "SC STATE"],
+  "paras": "all",
+  "end_card": ["Follow for daily HBCU history", "THE YARD", "Who's next?"],
+  "display": [
+    ["H. B. C. U.", "HBCU"],
+    ["February eighth,", "February 8,"],
+    ["nineteen sixty-eight,", "1968,"],
+    ["nineteen ninety-three.", "1993."],
+    ["two thousand one,", "2001,"],
+    ["Nearly thirty", "Nearly 30"]
+  ],
+  "cover": "cover_short.png"
+}
